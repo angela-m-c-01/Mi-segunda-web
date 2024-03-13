@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mi primera Web</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/938ca99d8c.js" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script> 
+    </head>
+
+    <body>
+        <div class="container">
+            <header id="encabezado">
+                <a href="index.html"><i class="fa-solid fa-heart" style="color: #a797d8;"></i></a>
+                <nav class="navbar">
+                    <label class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul class="menu">
+                        <li><a class="navli" href="#">Inicio</a></li>
+                        <li><a class="navli" href="#seccion-principal">Acerca de</a></li>
+                        <li><a class="navli" href="#trabajos">Trabajos</a></li>
+                        <li><a class="navli" href="#">Servicios</a></li>
+                        <li><a class="navli" href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="seccion-principal">
+                <section class="seccion-1">
+                    <div class="acerca-de">
+                        <h2 class="acerca-de-title">Acerca de mí</h2>
+                        <p>¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+                        <p id="parrafo2">"Me llamo Angela, nací en Perú y vivo en Lima. Me gusta escuchar música y cocinar, más que todo preparar postres. Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen."</p>
+                    </div>
+                    <div class="acerca-imagen">
+                        <img src="img/chica.png.jpg" height="150px" alt="imagen portada" />
+                    </div>
+                </section>
+                <section class="seccion-2">
+                    <img src="img/img2.png" alt="Imagen de carrusel 2" />
+                </section>
+                <section id="trabajos" class="trabajo-container">
+                    <h3 class="title-section">Servicios</h3>
+                    <div class="trabajos">
+                        <div class="trabajo-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZ9DMNFHxwZcfPXJrJeBMITxPMP3FMZk_ixXzTfzt4G_C-G058" height="150px" alt="Imagen de carrusel 1" />
+                            <h2>Diseño Gráfico</h2>
+                            <p>Podemos crear la identidad corporativa de tu empresa. Diseño , Maquetación de folletos, Catálogos, Papelería y mucho más.</p>
+                            <a href="#">Leer más</a>
+                        </div>
+                        <div class="trabajo-item">
+                            <img src=img/gestion-de-redes.png height="150px" alt="Imagen de carrusel 1" />
+                            <h2>Gestión de Redes</h2>
+                            <p>Nosotros creamos y optimizamos tus perfiles en las Redes Sociales. Importantes para que tu presencia online sea completa.</p>
+                            <a href="#">Leer más</a>
+                        </div>
+                        <div class="trabajo-item">
+                            <img src="https://image.freepik.com/foto-gratis/desarrollo-programadores-desarrollo-tecnologias-diseno-codificacion-sitios-web_18497-1090.jpg" height="150px" alt="Imagen de carrusel 1" />
+                            <h2>Desarrollo Web</h2>
+                            <p>Creamos tu página web utilizando las últimas tecnologías disponibles. Una Web adaptativa a tu móvil o Tablet y con un gestor de contenido fácil.</p>
+                            <a href="#">Leer más</a>
+                        </div>
+                    </div>
+                </section>
+                <footer class="form-header">
+                    <h1>Contacto</h1>
+                    <p><em>¡Esperamos tu consulta!</em></p>
+                    <form action="" method="get" class="formulario" id="form">
+                        <div class="form-row">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="nombre" type="text" />
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="pepe@gmail.com"/>
+                        </div>
+                        <div class="form-row">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button id="submit" type="submit">Enviar</button>
+                        </div>
+                        <div class="form-row">
+                            <p class="alertas" id="alertas"></p>
+                        </div>
+                    </form>
+                </footer>
+            </main>
+           
+            <footer id="contacto">
+                <div id="footer">
+                    <h3 class="title-section">Redes Sociales</h3>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/angelamanrique7230?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/angela_manrique?igsh=MWY0dXpmcWdieGJmcg=="><i class="fa-brands fa-instagram"></i> Instagram</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://wa.me/qr/O2NETH6D35SXO1"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+            <a id="fixed" target="_blank" href="https://developer.mozilla.org/es/docs/Web/JavaScript"><i class="fa-brands fa-js"></i></a>
+        </div>
+    </body>
+</html>
